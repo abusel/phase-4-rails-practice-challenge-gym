@@ -1,6 +1,6 @@
 class MembershipsController < ApplicationController
     def create
-        membership = Membership.create(membership_params)
+        membership = Membership.create!(membership_params)
         render json: membership, status: :created
     end
 
